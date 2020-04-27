@@ -24,7 +24,7 @@ public class Cat implements Running, Eating {
     @Override
     public String toString() {
         return String.format
-                ("My name is %s, I'm %d years old. I prefer to eat a lot of food, so my weight is %d kg, also I'm very pretty, cuz my breed is %s.", name, age, weight, breed);
+                ("My name is %s, I'm %d years old. I prefer to eat a lot of food, so my weight is %d kg, also I'm very pretty, cuz my breed is %s.", getName(), getAge(), getWeight(), getBreed());
     }
 
     @Override
