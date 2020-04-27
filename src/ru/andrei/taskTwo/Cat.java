@@ -21,6 +21,36 @@ public class Cat implements Running, Eating {
         this.breed = breed;
     }
 
+    /**
+     * I decided to add one getter and setter for this task just to show, that I'm understand what means lombok-annotations
+     * @return
+     */
+/*
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+ */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return age == cat.age &&
+                weight == cat.weight &&
+                name.equals(cat.name) &&
+                breed.equals(cat.breed);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, weight, breed);
+    }
+
     @Override
     public String toString() {
         return String.format
@@ -37,19 +67,5 @@ public class Cat implements Running, Eating {
         System.out.println("I'm running so fast, look at me");
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Cat cat = (Cat) o;
-        return age == cat.age &&
-                weight == cat.weight &&
-                name.equals(cat.name) &&
-                breed.equals(cat.breed);
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, age, weight, breed);
-    }
 }
