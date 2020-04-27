@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Main {
     public static void main(String... args) {
-        Comparator<Cat> customComparator = new CatBreedComparator().thenComparing(new CatAgeComparator());
-        List<Cat> catsList = new ArrayList();
-        Set<Cat> catsSet = new TreeSet(customComparator);
+        Comparator <Cat> customComparator = new CatBreedComparator().thenComparing(new CatAgeComparator());
+        List <Cat> catsList = new ArrayList<>();
+        Set <Cat> catsSet = new TreeSet<>(customComparator);
 /**
- *  Adding several cats with the same checking params inside comparators to Treeset for custom comparators check
+ *  Adding several cats with the same checking params inside comparators to TreeSet for custom comparators check
  *  and comparing/adding rule to set, Every cat are safe :)
  */
         catsSet.add(new Cat("Ann", 10, 11, "British"));
@@ -31,7 +31,7 @@ public class Main {
      */
     public static void returnOneCatFromSet(Set<Cat> cats) {
             cats.stream()
-                    .filter(cat -> cat.getName() == "Vasili")
+                    .filter(cat -> cat.getName().equals("Vasili"))
                     .limit(1)
                     .forEach(System.out::println);
         }
@@ -42,7 +42,7 @@ public class Main {
      */
      public static void returnAllCatsFromList(List<Cat> cats){
         cats.stream()
-                .sorted(Comparator.comparingInt(Cat::getAge))
+                .sorted(Comparator.comparingInt(Cat::getWeight))
                 .forEach(System.out::println);
      }
 
