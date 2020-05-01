@@ -1,5 +1,8 @@
 package ru.andrei.taskThree.second;
 
+import ru.andrei.taskThree.second.Enums.FlowerCountConstants;
+import ru.andrei.taskThree.second.Flowers.*;
+
 public class Main {
     public static void main(String... args) {
 
@@ -8,8 +11,8 @@ public class Main {
         flowers[1] = new Peony(10, "pink");
         flowers[2] = new Clove(9, "blue");
 
-        CountByForLoop.getBouquetcountWithForLoop(flowers);
-        CountByIterator.getCountByStream(flowers);
-        CountByForEach.getCountByForEachLoop(flowers);
+        System.out.println(String.format(FlowerCountConstants.FOR_EACH.getDescription(), FlowerCountConstants.getCountByForEachLoop(flowers)));
+        System.out.println(String.format(FlowerCountConstants.FOR_I.getDescription(), FlowerCountConstants.getCountByForLoop(flowers)));
+        System.out.println(String.format(FlowerCountConstants.ITERATOR.getDescription(), FlowerCountConstants.getCountByIterator(flowers)));
     }
 }

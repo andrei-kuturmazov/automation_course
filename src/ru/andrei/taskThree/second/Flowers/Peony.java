@@ -1,7 +1,8 @@
-package ru.andrei.taskThree.second;
+package ru.andrei.taskThree.second.Flowers;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import ru.andrei.taskThree.second.Flowers.Flower;
 
 @AllArgsConstructor
 @Getter

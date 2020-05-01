@@ -1,4 +1,4 @@
-package ru.andrei.taskThree.second;
+package ru.andrei.taskThree.second.Flowers;
 
 import lombok.Data;
 
