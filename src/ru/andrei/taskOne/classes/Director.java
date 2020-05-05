@@ -1,6 +1,6 @@
 package ru.andrei.taskOne.classes;
 
-import ru.andrei.taskOne.interfaces.BuilderInterface;
+import ru.andrei.taskOne.api.BuilderInterface;
 
 public class Director {
     public void returnHomeCat (BuilderInterface builder) {

@@ -2,9 +2,9 @@ package ru.andrei.taskOne.classes;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import ru.andrei.taskOne.interfaces.Eating;
-import ru.andrei.taskOne.interfaces.Meowing;
-import ru.andrei.taskOne.interfaces.Sleeping;
+import ru.andrei.taskOne.api.Eating;
+import ru.andrei.taskOne.api.Meowing;
+import ru.andrei.taskOne.api.Sleeping;
 
 @Getter
 @AllArgsConstructor

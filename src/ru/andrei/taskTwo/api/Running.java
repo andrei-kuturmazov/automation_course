@@ -1,4 +1,4 @@
-package ru.andrei.taskTwo.interfaces;
+package ru.andrei.taskTwo.api;
 
 public interface Running {
     void running();

@@ -2,8 +2,8 @@ package ru.andrei.taskTwo;
 
 import lombok.Getter;
 import lombok.Setter;
-import ru.andrei.taskTwo.interfaces.Eating;
-import ru.andrei.taskTwo.interfaces.Running;
+import ru.andrei.taskTwo.api.Eating;
+import ru.andrei.taskTwo.api.Running;
 import java.util.Objects;
 
 @Getter

@@ -1,4 +1,4 @@
-package ru.andrei.taskOne.interfaces;
+package ru.andrei.taskOne.api;
 
 public interface Eating {
     void eating();

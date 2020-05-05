@@ -1,7 +1,7 @@
 package ru.andrei.taskOne.classes;
 
 import lombok.Setter;
-import ru.andrei.taskOne.interfaces.BuilderInterface;
+import ru.andrei.taskOne.api.BuilderInterface;
 
 @Setter
 public class CatBuilder implements BuilderInterface {
