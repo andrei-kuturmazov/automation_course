@@ -1,0 +1,16 @@
+#1
+//Текст второй региональной новости:
+.//*[@data-ua-hash='news_geonews_grodno~3']//child::span[@class="entry-head _title"]/text()
+
+#2
+//Элемент в дом дереве с текстом Consequuntur5
+.//tbody//tr[position()=6]//td[position()=5]/text()
+
+#3
+//элемент с числом 36,3 из лесенки (2 варианта)
+.//*[@id='sibling-36.3']
+.//*[@id='sibling-36.1']/div[2]
+
+#4
+элемент с числом 35,32 из таблицы
+.//*[@class='row-35']/td[@class='column-32']
